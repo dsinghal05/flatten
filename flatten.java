@@ -11,6 +11,13 @@ public class flatten { //takes a 2 dimensional array and converts it into a 1 di
     int rows = a.length;
     int cols = a[0].length;
 
+    for (int y = 0; y < a.length; y++) {
+        for (int x = 0; x < a[y].length; x++) {
+            System.out.print(a[y][x] + " ");
+        }
+        System.out.println();
+    }
+
     int[] tmp = new int[rows*cols];
     int z = 0;
     for (int i = 0; i < rows; i++) {
